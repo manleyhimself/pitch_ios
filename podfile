@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'PitchApp' do
+  pod 'Alamofire', '2.0.2'
+  pod 'SDWebImage', '~>3.7'
+  pod 'CryptoSwift'
+end

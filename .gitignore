@@ -1,0 +1,6 @@
+pods
+PitchApp.xcworkspace/xcuserdata/
+.DS_Store
+PitchApp/.DS_Store
+
+*.xcuserdatad

@@ -26,4 +26,6 @@ struct ViewComponents {
     UIGraphicsEndImageContext()
     return image
   }
+  
+  struct Feed {}
 }

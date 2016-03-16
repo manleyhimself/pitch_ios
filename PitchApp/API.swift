@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import Photos
 import SystemConfiguration
 
 class API {
@@ -24,14 +23,12 @@ class API {
     }
   }
   
-  
-  
   var headers:[String:String] {
     get {
       return [
         "Content-Type": "application/json",
         "Accept": "application/json",
-//        "AUTHORIZATION": "\(User.fetchApiToken())"
+//        "AUTHORIZATION": "\(User.fetchApiToken())" TODO reinstate once authenication has been added
       ]
     }
   }

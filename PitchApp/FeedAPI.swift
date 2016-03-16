@@ -12,7 +12,13 @@ import Alamofire
 class FeedAPI:API {
   
   func index(userId:Int, page:Int = 0, completion: (feedUsers: [FeedUser]) -> Void, failure: () -> Void) {
-    let getUrl = "\(baseURL)/api/v1/feeds"
+    if !hasConnection {
+      noConnectionFunc()
+      failure()
+      return
+    }
+    
+    let getUrl = "\(baseURL)/feeds"
     let params = [
       "feed": [
         "user_id": userId,

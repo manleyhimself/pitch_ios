@@ -24,6 +24,15 @@ class FeedCellView:UICollectionViewCell {
     }
   }
   
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    contentView.addSubview(label)
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
   func updateCell() {
     label.text = user.name
     //TODO: update all user info in cell (e.g. age or image)

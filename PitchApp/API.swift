@@ -12,8 +12,8 @@ import SystemConfiguration
 
 class API {
   // BRENDAN
-  static let domain = "http://192.168.1.9:4000"
-  let baseURL = "http://192.168.1.9:4000/api/v1"
+  static let domain = "http://192.168.1.9:3000"
+  let baseURL = "http://192.168.1.9:3000/api/v1"
   
   var noConnectionFunc:() -> Void = {}
   

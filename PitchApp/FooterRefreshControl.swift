@@ -64,7 +64,7 @@ class FooterRefreshControl:UICollectionReusableView {
   }
   
   func loadBtnTapped() {
-    if let vc = UIApplication.topViewController() as? FeedIndexController {
+    if let vc = UIApplication.topViewController() as? FeedIndexViewController {
       vc.appendData()
     }
   }

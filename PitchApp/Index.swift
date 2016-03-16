@@ -42,7 +42,7 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
     page = 0
     noMoreContent = false
     //below is a stubbed userId
-    api.index(1, page: page, completion: { feedUsers in
+    api.index(101, page: page, completion: { feedUsers in
       self.users = feedUsers
       self.userCollectionView.reloadData()
       self.busy = false
@@ -58,7 +58,7 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
     footer.startLoader()
     busy = true
     page++
-    api.index(1, page: page, completion: { feedUsers in
+    api.index(101, page: page, completion: { feedUsers in
       self.users.appendContentsOf(feedUsers)
       self.userCollectionView.reloadData()
       self.footer.stopLoader()
@@ -78,8 +78,8 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
   }
   
   func scrollViewDidScroll(scrollView: UIScrollView) {
-    scrollView.bounces = scrollView.contentOffset.y > 100
-    scrollView.scrollEnabled = scrollView.contentOffset.y > 0
+    scrollView.bounces = scrollView.contentOffset.y > 100 || scrollView.contentOffset.y <= 0
+    scrollView.scrollEnabled = true
     if scrollAtBottom && !busy && !noMoreContent {
       appendData()
     }
@@ -90,6 +90,12 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
       let scrollOffsetY = userCollectionView.contentOffset.y  - (userCollectionView.contentSize.height - Bounds.height)
       return abs(scrollOffsetY) < 100
     }
+  }
+  
+  // START -- COLLECTION DELEGATE FUNCTIONS
+  
+  func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    return 1
   }
   
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
@@ -111,11 +117,11 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
     return users.count
   }
   
-  func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    let cell = collectionView.cellForItemAtIndexPath(indexPath) as! FeedCellView
-    // do something?
-    return
-  }
+//  func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+//    let cell = collectionView.cellForItemAtIndexPath(indexPath) as! FeedCellView
+//    // do something?
+//    return
+//  }
   
   
   func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -124,6 +130,9 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
     cell.user = user
     return cell
   }
+  
+  // END -- COLLECTION DELEGATE FUNCTIONS
+  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()

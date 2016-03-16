@@ -23,6 +23,8 @@
 		C7A505FE1C98E76A00C960CC /* FooterRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A505FD1C98E76A00C960CC /* FooterRefreshControl.swift */; };
 		C7A506001C98E7FF00C960CC /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A505FF1C98E7FF00C960CC /* GlobalConfig.swift */; };
 		C7A506041C98EA6900C960CC /* FeedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A506031C98EA6900C960CC /* FeedAPI.swift */; };
+		C7A506071C99A53800C960CC /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A506061C99A53800C960CC /* Navigation.swift */; };
+		C7A5060A1C99A5F700C960CC /* UserAuthStatusDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A506091C99A5F700C960CC /* UserAuthStatusDelegate.swift */; };
 		FE1BFFAB40FB5360461FE90D /* Pods_PitchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEE5C2C447C388BD50D1CFA /* Pods_PitchApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		C7A505FD1C98E76A00C960CC /* FooterRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterRefreshControl.swift; sourceTree = "<group>"; };
 		C7A505FF1C98E7FF00C960CC /* GlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
 		C7A506031C98EA6900C960CC /* FeedAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedAPI.swift; sourceTree = "<group>"; };
+		C7A506061C99A53800C960CC /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		C7A506091C99A5F700C960CC /* UserAuthStatusDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthStatusDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 		C736815B1C97907800B6BC65 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C7A506081C99A5E100C960CC /* PreSession */,
 				C7A506011C98E88B00C960CC /* Feed */,
 			);
 			name = ViewControllers;
@@ -227,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				C736815C1C97909D00B6BC65 /* Index.swift */,
+				C7A506061C99A53800C960CC /* Navigation.swift */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -238,6 +244,14 @@
 				C778CA6C1C98B3B400A6AE30 /* FeedCellView.swift */,
 			);
 			name = Index;
+			sourceTree = "<group>";
+		};
+		C7A506081C99A5E100C960CC /* PreSession */ = {
+			isa = PBXGroup;
+			children = (
+				C7A506091C99A5F700C960CC /* UserAuthStatusDelegate.swift */,
+			);
+			name = PreSession;
 			sourceTree = "<group>";
 		};
 		D6D3B8E0059466EDDE3D320A /* Frameworks */ = {
@@ -434,10 +448,12 @@
 				C778CA6D1C98B3B400A6AE30 /* FeedCellView.swift in Sources */,
 				C736815D1C97909D00B6BC65 /* Index.swift in Sources */,
 				C73681281C978A6F00B6BC65 /* AppDelegate.swift in Sources */,
+				C7A506071C99A53800C960CC /* Navigation.swift in Sources */,
 				C7A506041C98EA6900C960CC /* FeedAPI.swift in Sources */,
 				C736815A1C978EF800B6BC65 /* API.swift in Sources */,
 				C7A506001C98E7FF00C960CC /* GlobalConfig.swift in Sources */,
 				C778CA6B1C98A73C00A6AE30 /* FeedUser.swift in Sources */,
+				C7A5060A1C99A5F700C960CC /* UserAuthStatusDelegate.swift in Sources */,
 				C7A505FA1C98E52500C960CC /* Collection.swift in Sources */,
 				C7A505FE1C98E76A00C960CC /* FooterRefreshControl.swift in Sources */,
 				C73681571C978E6800B6BC65 /* ViewComponents.swift in Sources */,

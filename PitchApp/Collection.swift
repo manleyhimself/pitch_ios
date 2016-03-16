@@ -8,7 +8,9 @@
 
 import UIKit
 
+// What does this line do? -GW
 extension ViewComponents.Feed {
+    
   struct Collection {
     private static let width:CGFloat = Bounds.width
     

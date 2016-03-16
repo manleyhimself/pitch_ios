@@ -10,6 +10,8 @@ import Foundation
 import Alamofire
 import SystemConfiguration
 
+
+// Class that contains basic API functionality that will be passed on to our API call classes
 class API {
   // BRENDAN
   static let domain = "http://192.168.1.9:3000"
@@ -49,14 +51,17 @@ class API {
     return true
   }
   
+  // Makes the network activity thing spin in the top right of the phone
   func queryBegan() {
     UIApplication.sharedApplication().networkActivityIndicatorVisible = true
   }
-  
+    
+  // Makes the network activity thing stop spinning
   func queryEnded() {
     UIApplication.sharedApplication().networkActivityIndicatorVisible = false
   }
   
+  // Checks for network connection
   private func hasNetworkConnection() -> Bool {
     var zeroAddress = sockaddr_in()
     zeroAddress.sin_len = UInt8(sizeofValue(zeroAddress))

@@ -8,8 +8,20 @@
 
 import Foundation
 
+// Struct that will store user info the feed collection view
 struct FeedUser {
   let id:Int?
   let name:String?
   let age:Int?
 }
+
+
+/* 
+Questions for Brendan:
+1. ViewComponents/Buttons and ViewComponents/ViewComponents?
+2. Views/Feed/Index/FooterRefreshControl?
+
+
+
+
+*/

@@ -11,7 +11,9 @@ import Alamofire
 
 class FeedAPI:API {
   
+  // Fetch users from Rails API
   func index(userId:Int, page:Int = 0, completion: (feedUsers: [FeedUser]) -> Void, failure: () -> Void) {
+    
     if !hasConnection {
       noConnectionFunc()
       failure()
@@ -30,13 +32,16 @@ class FeedAPI:API {
       ]
     ]
     queryBegan()
+    
+    // HTTP request with Alamofire
     Alamofire.request(.GET, getUrl, headers: headers, parameters: params).responseJSON { request, response, result in
       self.queryEnded()
       if response?.statusCode != 200 {
         failure()
         return
       }
-      
+        
+      // Parses returned user JSON into an array of swift User sctructs
       if let feedData = result.value?["users"] as? NSArray {
         var users:[FeedUser] = []
         for data in feedData {

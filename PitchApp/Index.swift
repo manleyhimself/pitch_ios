@@ -36,6 +36,7 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
     getData()
   }
   
+  // Make first feed.index API call
   func getData() {
     if busy { return }
     busy = true
@@ -53,6 +54,7 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
     })
   }
   
+  // Make subsequent feed.index API call
   func appendData() {
     if busy { return }
     footer.startLoader()
@@ -76,7 +78,9 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
     userCollectionView.delegate = self
     view.addSubview(userCollectionView)
   }
-  
+
+  // Makes function calls in conjunction with scrolls (I could use some clarification -GW)
+    
   func scrollViewDidScroll(scrollView: UIScrollView) {
     scrollView.bounces = scrollView.contentOffset.y > 100 || scrollView.contentOffset.y <= 0
     scrollView.scrollEnabled = true

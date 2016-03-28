@@ -9,6 +9,10 @@
 import UIKit
 
 // What does this line do? -GW
+// Answer: This allows you to add code to an already existing struct. The "Feed" Stuct was
+//        defined within the "ViewComponents" Struct, which is why we access it with dot notation.
+//        Then evertying within the brackets which are opened up on line 18, is added to the "Feed" Struct.
+
 extension ViewComponents.Feed {
     
   struct Collection {

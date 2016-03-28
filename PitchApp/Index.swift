@@ -78,9 +78,17 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
     userCollectionView.delegate = self
     view.addSubview(userCollectionView)
   }
-
-  // Makes function calls in conjunction with scrolls (I could use some clarification -GW)
-    
+  
+/*
+  Makes function calls in conjunction with scrolls (I could use some clarification -GW)
+   
+  Answer: UICollectionViews inherit from UIScrollViews. By virture of having this delegate, UIScrollViewDelegate, we 
+          have access to funcs like scrollViewDidScroll. This gets triggered whenever the user scrolls the view. The bouncing
+          attribute determines if, when the bottom or top of the view is reached, the view can be streched past its limit and
+          then bounce back. scrollEnabled is obvious and then we only call the appendDate() func if the user has reached the 
+          bottom of the view.
+*/
+  
   func scrollViewDidScroll(scrollView: UIScrollView) {
     scrollView.bounces = scrollView.contentOffset.y > 100 || scrollView.contentOffset.y <= 0
     scrollView.scrollEnabled = true

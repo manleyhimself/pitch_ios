@@ -20,11 +20,6 @@ class FeedNavigationController:UINavigationController, UINavigationControllerDel
     navigationBar.translucent = false
     delegate = self
     navigationBar.titleTextAttributes = navbarTitleTextAttributes
-    assignRootViewController()
-  }
-  
-  func assignRootViewController() {
-    viewControllers.append(FeedIndexViewController())
   }
   
   func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {

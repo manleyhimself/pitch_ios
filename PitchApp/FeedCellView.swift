@@ -9,6 +9,7 @@
 import UIKit
 
 class FeedCellView:UICollectionViewCell {
+  
   var label:UILabel! = {
     let label = UILabel(frame: CGRectMake(0, 0, 300, 30))
     label.textColor = UIColor.blackColor()
@@ -17,8 +18,7 @@ class FeedCellView:UICollectionViewCell {
   
   var user:FeedUser! {
     didSet {
-      let oldUser = oldValue
-      if oldUser == nil || oldUser.id != user.id {
+      if oldValue == nil || oldValue.id != user.id {
         updateCell()
       }
     }

@@ -31,7 +31,6 @@ class FeedIndexViewController:UIViewController, UICollectionViewDataSource, UICo
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = "User Feed AKA Needs Cooler Title"
     setupCollectionView()
     getData()
   }

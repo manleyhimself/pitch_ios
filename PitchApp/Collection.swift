@@ -19,7 +19,7 @@ extension ViewComponents.Feed {
     private static let width:CGFloat = Bounds.width
     
     static let frame:CGRect = CGRectMake(0, 0, width, Bounds.height)
-    static let cellSize:CGSize = CGSize(width: width, height: 50)
+    static let cellSize:CGSize = CGSize(width: width, height: Bounds.height - 50)
     
     static var collectionView:UICollectionView {
       let collection = UICollectionView(frame: frame, collectionViewLayout: layout)

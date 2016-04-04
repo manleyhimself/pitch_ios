@@ -14,8 +14,8 @@ import SystemConfiguration
 // Class that contains basic API functionality that will be passed on to our API call classes
 class API {
   // BRENDAN
-  static let domain = "http://192.168.1.9:3000"
-  let baseURL = "http://192.168.1.9:3000/api/v1"
+  static let domain = "http://192.168.1.6:3000"
+  let baseURL = "http://192.168.1.6:3000/api/v1"
   
   var noConnectionFunc:() -> Void = {}
   

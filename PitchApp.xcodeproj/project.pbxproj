@@ -16,6 +16,7 @@
 		C73681571C978E6800B6BC65 /* ViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73681561C978E6800B6BC65 /* ViewComponents.swift */; };
 		C736815A1C978EF800B6BC65 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73681591C978EF800B6BC65 /* API.swift */; };
 		C736815D1C97909D00B6BC65 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736815C1C97909D00B6BC65 /* Index.swift */; };
+		C7666DF01CB30F13004BF422 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7666DEF1CB30F13004BF422 /* MainTabBarController.swift */; };
 		C778CA6B1C98A73C00A6AE30 /* FeedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778CA6A1C98A73C00A6AE30 /* FeedUser.swift */; };
 		C778CA6D1C98B3B400A6AE30 /* FeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778CA6C1C98B3B400A6AE30 /* FeedCellView.swift */; };
 		C7A505FA1C98E52500C960CC /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A505F91C98E52500C960CC /* Collection.swift */; };
@@ -64,6 +65,7 @@
 		C73681561C978E6800B6BC65 /* ViewComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewComponents.swift; sourceTree = "<group>"; };
 		C73681591C978EF800B6BC65 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C736815C1C97909D00B6BC65 /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		C7666DEF1CB30F13004BF422 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C778CA6A1C98A73C00A6AE30 /* FeedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUser.swift; sourceTree = "<group>"; };
 		C778CA6C1C98B3B400A6AE30 /* FeedCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCellView.swift; sourceTree = "<group>"; };
 		C7A505F91C98E52500C960CC /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			children = (
 				C7A506081C99A5E100C960CC /* PreSession */,
 				C7A506011C98E88B00C960CC /* Feed */,
+				C7666DEF1CB30F13004BF422 /* MainTabBarController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				C778CA6D1C98B3B400A6AE30 /* FeedCellView.swift in Sources */,
 				C736815D1C97909D00B6BC65 /* Index.swift in Sources */,
 				C73681281C978A6F00B6BC65 /* AppDelegate.swift in Sources */,
+				C7666DF01CB30F13004BF422 /* MainTabBarController.swift in Sources */,
 				C7A506071C99A53800C960CC /* Navigation.swift in Sources */,
 				C7A506041C98EA6900C960CC /* FeedAPI.swift in Sources */,
 				C736815A1C978EF800B6BC65 /* API.swift in Sources */,

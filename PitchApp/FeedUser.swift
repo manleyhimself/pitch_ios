@@ -13,14 +13,6 @@ struct FeedUser {
   let id:Int?
   let name:String?
   let age:Int?
+  let api = FeedAPI()
 }
 
-
-/* 
-Questions for Brendan:
-1. ViewComponents/Buttons and ViewComponents/ViewComponents?
- Answer: These just contain elements, or views, that can be dropped in elsewhere. Such as buttons with certain colors.
-2. Views/Feed/Index/FooterRefreshControl?
- Answer: The collection view, which the Feed is made from, has a footer which is used to load in new content. When it's in view, 
-        the next API call is triggered.
-*/

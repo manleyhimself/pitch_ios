@@ -11,8 +11,11 @@ import UIKit
 class UserAuthStatusDelegateViewController:UIViewController {
   
   override func viewDidAppear(animated: Bool) {
-    super.viewDidAppear(false)
+    super.viewDidAppear(animated)
     //TODO add conditional which attempts to authenticate user, before presenting a view controller
-    presentViewController(FeedNavigationController(), animated: false, completion: nil)
+
+    if let tabBarController = storyboard?.instantiateViewControllerWithIdentifier("MainTabBarController") as? UITabBarController {
+      presentViewController(tabBarController, animated: false, completion: nil)
+    }
   }
 }

@@ -12,7 +12,6 @@ import UIKit
 let Bounds:CGSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height - 64)
 let aspectRatio:CGFloat = Bounds.height / Bounds.width
 
-
 struct ViewComponents {
   static let activeColor = UIColor.blueColor()
   

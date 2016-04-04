@@ -1,26 +1,160 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xeU-YQ-KrJ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--User Auth Status Delegate View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="q4r-30-t7c">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="UserAuthStatusDelegateViewController" customModule="PitchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bLi-8e-D0O" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="nq5-ry-nNi"/>
+                        <viewControllerLayoutGuide type="bottom" id="XwH-Rh-fNA"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="rH6-al-Mx9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rBJ-j0-Dfd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="559-W8-UXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2229" y="780"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="8mb-ER-5t1">
+            <objects>
+                <viewController id="c8I-YN-Y41" customClass="FeedIndexViewController" customModule="PitchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5ZH-Qu-1Xl"/>
+                        <viewControllerLayoutGuide type="bottom" id="mTu-dH-0Gn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wsE-Pw-3QK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feed" id="GGc-ag-44M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQG-rU-ka1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="-621"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YNC-5d-Fra">
+            <objects>
+                <viewController id="u08-fj-BZS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="00G-ap-8dA"/>
+                        <viewControllerLayoutGuide type="bottom" id="KFu-ge-Xer"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cfr-3U-kIV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i2H-X3-uOJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yO-vm-aLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2223" y="111"/>
+        </scene>
+        <!--User Auth Status Delegate View Controller-->
+        <scene sceneID="BAi-xY-bL4">
+            <objects>
+                <viewController id="xeU-YQ-KrJ" customClass="UserAuthStatusDelegateViewController" customModule="PitchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EmE-Sd-Al5"/>
+                        <viewControllerLayoutGuide type="bottom" id="lvv-A1-zIZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rkq-t6-8WQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZM-Gf-UaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-226" y="380"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="Qmr-Ip-Oht">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" id="n4h-0B-UCR" customClass="MainTabBarController" customModule="PitchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="AYH-Db-2SO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BkP-en-ObR" kind="relationship" relationship="viewControllers" id="hKM-qM-bl0"/>
+                        <segue destination="6E2-22-hlJ" kind="relationship" relationship="viewControllers" id="U1b-dq-n8e"/>
+                        <segue destination="gNQ-SS-Apx" kind="relationship" relationship="viewControllers" id="HP5-VT-Oah"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNO-RI-4Rv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="380"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="nWb-nE-uOy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BkP-en-ObR" customClass="FeedNavigationController" customModule="PitchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" id="lL5-bv-Xd9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SUb-ul-puc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c8I-YN-Y41" kind="relationship" relationship="rootViewController" id="yQu-sx-Lok"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7J-MS-P1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="-615"/>
+        </scene>
+        <!--Connections-->
+        <scene sceneID="Vaf-0U-VLh">
+            <objects>
+                <navigationController title="Connections" automaticallyAdjustsScrollViewInsets="NO" id="6E2-22-hlJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Connections" id="meC-BR-s4h"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wm2-GA-Ied">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="u08-fj-BZS" kind="relationship" relationship="rootViewController" id="adY-ah-jpU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFn-Ac-qvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="111"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="qHP-wf-D9M">
+            <objects>
+                <navigationController title="Settings" automaticallyAdjustsScrollViewInsets="NO" id="gNQ-SS-Apx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="wjt-TL-XRZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QXA-Oo-mQW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bLi-8e-D0O" kind="relationship" relationship="rootViewController" id="1L3-FH-azh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3R-KN-4tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="780"/>
         </scene>
     </scenes>
 </document>
